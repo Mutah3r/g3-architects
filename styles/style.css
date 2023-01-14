@@ -552,13 +552,15 @@ header {
         padding-bottom: 50px;
         margin-bottom: 0;
     }
-    .sponsors__logo__container{
+
+    .sponsors__logo__container {
         justify-content: center;
     }
 }
 
 /* for medium devices */
 @media only screen and (min-width: 801px) and (max-width: 1250px) {
+
     .navbar,
     .container,
     .features__description__container,
@@ -581,9 +583,11 @@ header {
         display: block;
         margin: 10px auto;
     }
+
     .features__image__container img {
         width: 100%;
     }
+
     .experience-container span {
         font-size: 45px;
     }
@@ -593,9 +597,10 @@ header {
         justify-content: center;
     }
 
-    .sponsors__logo__container{
+    .sponsors__logo__container {
         justify-content: center;
     }
+
     .container,
     .facts__description {
         margin-top: 0;
@@ -607,6 +612,7 @@ header {
         margin-top: 40px;
         margin-bottom: 40px;
     }
+
     .footer {
         padding-top: 50px;
         padding-bottom: 50px;
