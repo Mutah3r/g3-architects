@@ -488,7 +488,7 @@ header {
 }
 
 /* For Tablet */
-@media only screen and (min-width: 577px) and (max-width: 768px) {
+@media only screen and (min-width: 577px) and (max-width: 800px) {
 
     .container,
     .features__description__container,
@@ -551,5 +551,66 @@ header {
         padding-top: 50px;
         padding-bottom: 50px;
         margin-bottom: 0;
+    }
+    .sponsors__logo__container{
+        justify-content: center;
+    }
+}
+
+/* for medium devices */
+@media only screen and (min-width: 801px) and (max-width: 1250px) {
+    .navbar,
+    .container,
+    .features__description__container,
+    .features__image__container,
+    .facts__description {
+        padding: 30px;
+        width: 100%;
+    }
+
+    .quick__list,
+    .features__container {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .features__image__container img,
+    .experience-container {
+        position: static;
+        display: block;
+        margin: 10px auto;
+    }
+    .features__image__container img {
+        width: 100%;
+    }
+    .experience-container span {
+        font-size: 45px;
+    }
+
+    .fact__container {
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .sponsors__logo__container{
+        justify-content: center;
+    }
+    .container,
+    .facts__description {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 0;
+    }
+
+    .happy__clients {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .footer {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        width: 100%;
+        margin: 0 auto;
     }
 }
