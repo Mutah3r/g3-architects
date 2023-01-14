@@ -10,8 +10,8 @@
     --color-primary: #FF900E;
     --background-color: #FF900E19;
     /* Last 2 digits for 10% opacity */
-    --title-color: #131313;
-    --description-text-color: #727272;
+    --text-bold: #131313;
+    --text-light: #727272;
     --nav-link-color: #424242;
 }
 
@@ -45,7 +45,7 @@ body {
 }
 
 .navbar__title {
-    color: var(--title-color);
+    color: var(--text-bold);
     font-weight: 700;
     font-size: 45px;
 }
@@ -83,14 +83,14 @@ header {
 }
 
 .header__title {
-    color: var(--title-color);
+    color: var(--text-bold);
     font-weight: 700;
     font-size: 64px;
     margin: 100px 0 50px;
 }
 
 .description {
-    color: var(--description-text-color);
+    color: var(--text-light);
 }
 
 .btn--primary {
@@ -119,25 +119,44 @@ main {
     Quick List section styles
 -------------------------------*/
 .quick__list {
-
+    margin-top: 85px;
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
 }
 .quick__list__image__container {
-
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
 }
 
 .quick__list__image__container img {
-
+    width: 342px;
+    height: 342px;
 }
 .quick__list__description__container {
-    
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
 .quick__list__title{
-
+    color: var(--text-light);
+    font-weight: 500;
+    font-size: 45px;
 }
 .text--bold {
-
+    color: var(--text-bold);
+    font-weight: 700;
 }
 .text--primary {
-    
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.quick__list__description__container button {
+    margin-top: 5px;
+    align-self: flex-start; /* to prevent button from taking full width */
 }
