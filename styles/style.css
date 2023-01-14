@@ -3,6 +3,7 @@
  ----------*/
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
+
 /*------------------ 
     Common Styles
 ------------------*/
@@ -70,6 +71,7 @@ body {
     text-decoration: none;
 }
 
+
 /*------------------- 
     Header Styles
 -------------------*/
@@ -108,10 +110,12 @@ header {
     width: 100%;
 }
 
+
 /*----------------- 
     main styles
 -----------------*/
 /* main {} */
+
 
 /*-------------------------------
     Quick List section styles
@@ -215,7 +219,8 @@ header {
     width: 90%;
     position: absolute;
     top: 0;
-    right: 0;;
+    right: 0;
+    ;
 }
 
 .experience-container {
