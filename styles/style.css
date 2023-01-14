@@ -287,3 +287,27 @@ header {
     font-size: 20px;
     color: var(--text-light);
 }
+
+
+/*------------------------------
+    Sponsors section styles
+------------------------------*/
+.sponsors {
+    text-align: center;
+    margin-bottom: 130px;
+}
+.sponsors__description {
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+.sponsors__logo__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.sponsors__logo__container img {
+    height: 50px;
+    width: 167px;
+}
