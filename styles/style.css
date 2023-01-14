@@ -111,9 +111,7 @@ header {
 /*----------------- 
     main styles
 -----------------*/
-main {
-
-}
+/* main {} */
 
 /*-------------------------------
     Quick List section styles
@@ -126,6 +124,7 @@ main {
     align-items: center;
     padding: 50px;
 }
+
 .quick__list__image__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -136,21 +135,24 @@ main {
     width: 342px;
     height: 342px;
 }
+
 .quick__list__description__container {
     display: flex;
     flex-direction: column;
     gap: 25px;
 }
 
-.quick__list__title{
+.quick__list__title {
     color: var(--text-light);
     font-weight: 500;
     font-size: 45px;
 }
+
 .text--bold {
     color: var(--text-bold);
     font-weight: 700;
 }
+
 .text--primary {
     color: var(--color-primary);
     font-weight: 700;
@@ -158,5 +160,78 @@ main {
 
 .quick__list__description__container button {
     margin-top: 5px;
-    align-self: flex-start; /* to prevent button from taking full width */
+    align-self: flex-start;
+    /* to prevent button from taking full width */
+}
+
+
+/*----------------------------- 
+    Features seciton styles
+-----------------------------*/
+.features__container {
+    display: flex;
+    gap: 50px;
+    margin-top: 80px;
+    margin-bottom: 130px;
+}
+
+.features__description__container {
+    width: 40%;
+}
+
+.features__title {
+    font-weight: 700;
+    font-size: 45px;
+    color: var(--text-bold);
+    padding-left: 20px;
+    border-left: 5px solid var(--color-primary);
+    margin-bottom: 25px;
+}
+
+.features__description {
+    margin-bottom: 30px;
+}
+
+.feature {
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--text-bold);
+    margin-bottom: 10px;
+}
+
+.features__image__container {
+    width: 60%;
+    position: relative;
+}
+
+.features__image__container img {
+    width: 90%;
+    position: absolute;
+    top: 0;
+    right: 0;;
+}
+
+.experience-container {
+    background-color: var(--color-primary);
+    padding: 45px 40px;
+    font-weight: 500;
+    font-size: 25px;
+    display: inline-block;
+    color: #FFFFFF;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.text__large {
+    font-weight: 700;
+    font-size: 65px;
 }
