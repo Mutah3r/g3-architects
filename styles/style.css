@@ -1,0 +1,143 @@
+/*-----------
+    Fonts
+ ----------*/
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+/*------------------ 
+    Common Styles
+------------------*/
+:root {
+    --color-primary: #FF900E;
+    --background-color: #FF900E19;
+    /* Last 2 digits for 10% opacity */
+    --title-color: #131313;
+    --description-text-color: #727272;
+    --nav-link-color: #424242;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+/*------------------- 
+    Navbar Styles
+-------------------*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.navbar__title__container {
+    align-items: center;
+}
+
+.navbar__title {
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.navbar__links_container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__links_container ul {
+    display: flex;
+    gap: 70px;
+}
+
+.navbar__links_container ul li {
+    list-style: none;
+    ;
+}
+
+.navbar__links_container ul li a {
+    color: var(--nav-link-color);
+    text-decoration: none;
+}
+
+/*------------------- 
+    Header Styles
+-------------------*/
+header {
+    background-color: var(--background-color);
+    padding: 50px 0px 45px;
+}
+
+.header__description {
+    text-align: center;
+}
+
+.header__title {
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 64px;
+    margin: 100px 0 50px;
+}
+
+.description {
+    color: var(--description-text-color);
+}
+
+.btn--primary {
+    margin: 40px 0px;
+    background-color: var(--color-primary);
+    color: #FFFFFF;
+    padding: 20px 25px;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+}
+
+.banner__image {
+    width: 100%;
+}
+
+/*----------------- 
+    main styles
+-----------------*/
+main {
+
+}
+
+/*-------------------------------
+    Quick List section styles
+-------------------------------*/
+.quick__list {
+
+}
+.quick__list__image__container {
+
+}
+
+.quick__list__image__container img {
+
+}
+.quick__list__description__container {
+    
+}
+
+.quick__list__title{
+
+}
+.text--bold {
+
+}
+.text--primary {
+    
+}
