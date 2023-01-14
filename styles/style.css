@@ -258,6 +258,7 @@ header {
     display: flex;
     justify-content: space-around;
     margin: auto;
+    flex-wrap: wrap;
 }
 
 .fact {
@@ -412,10 +413,11 @@ header {
 
 /* For Mobile */
 @media only screen and (max-width: 576px) {
+
     .container,
     .features__description__container,
     .features__image__container,
-    .facts__description{
+    .facts__description {
         padding: 20px;
         width: 100%;
     }
@@ -431,9 +433,10 @@ header {
         gap: 20px;
     }
 
-    .navbar__title{
+    .navbar__title {
         text-align: center;
     }
+
     .header__title,
     .section__title {
         font-size: 40px;
@@ -448,7 +451,8 @@ header {
 
     .quick__list__image__container img,
     .features__container,
-    .features__image__container{
+    .features__image__container,
+    .features__image__container img {
         width: 100%;
         height: auto;
     }
@@ -459,21 +463,24 @@ header {
         display: block;
         margin: 10px auto;
     }
+
     .experience-container span {
         font-size: 30px;
     }
-    
+
     .container,
     .facts__description {
         margin-top: 0;
         margin-bottom: 0;
         padding-top: 0;
     }
+
     .happy__clients {
         margin-top: 40px;
         margin-bottom: 40px;
     }
-    .footer{
+
+    .footer {
         padding-top: 50px;
         padding-bottom: 50px;
         margin-bottom: 0;
@@ -482,5 +489,67 @@ header {
 
 /* For Tablet */
 @media only screen and (min-width: 577px) and (max-width: 768px) {
-    
+
+    .container,
+    .features__description__container,
+    .features__image__container,
+    .facts__description {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .navbar,
+    .quick__list,
+    .features__container {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .fact__container {
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .quick__list__image__container,
+    .review__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .quick__list__image__container img,
+    .features__container,
+    .features__image__container,
+    .features__image__container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .features__image__container img,
+    .experience-container {
+        position: static;
+        display: block;
+        margin: 10px auto;
+    }
+
+    .experience-container span {
+        font-size: 40px;
+    }
+
+    .container,
+    .facts__description {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 0;
+    }
+
+    .happy__clients {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .footer {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin-bottom: 0;
+    }
 }
