@@ -269,11 +269,29 @@ header {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease 0.2s;
+}
+
+.fact:hover {
+    transform: scale(0.9);
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 235, 212, 0.9));
+    cursor: pointer;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3)
+}
+
+.fact:hover img{
+    transform: rotateY(360deg);
+}
+
+.fact:hover .fact__counter {
+    color: var(--color-primary);
+    font-weight: 900;
 }
 
 .fact img {
     height: 45px;
     width: 45px;
+    transition: transform 0.5s ease-in;
 }
 
 .fact__counter {
@@ -310,4 +328,21 @@ header {
 .sponsors__logo__container img {
     height: 50px;
     width: 167px;
+    filter: grayscale(100%);
+}
+
+
+/*--------------------------- 
+    Footer section styles
+---------------------------*/
+.footer {
+    background-color: var(--background-color);
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.footer__text {
+    font-size: 20px;
+    color: var(--nav-link-color);
 }
