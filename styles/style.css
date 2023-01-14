@@ -279,7 +279,7 @@ header {
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3)
 }
 
-.fact:hover img{
+.fact:hover img {
     transform: rotateY(360deg);
 }
 
@@ -314,10 +314,12 @@ header {
     text-align: center;
     margin-bottom: 130px;
 }
+
 .sponsors__description {
     margin-top: 25px;
     margin-bottom: 50px;
 }
+
 .sponsors__logo__container {
     display: flex;
     justify-content: space-between;
@@ -345,4 +347,59 @@ header {
 .footer__text {
     font-size: 20px;
     color: var(--nav-link-color);
+}
+
+
+/* -----------------------------------
+    Happy Clients seciton styles
+----------------------------------- */
+.happy__clients {
+    margin-bottom: 180px;
+    background-color: var(--background-color);
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.happy__clients__title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.review__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.review {
+    border-left: 5px solid var(--color-primary);
+    border-radius: 65px;
+    padding: 25px;
+    display: flex;
+    gap: 15px;
+}
+
+/* .review__author__image__container {} */
+
+.review__author__image__container img {
+    width: 65px;
+    filter: drop-shadow(1px 1px 8px var(--text-light));
+}
+
+.review__details {
+    font-weight: 600;
+}
+
+.review__author__name {
+    margin-top: 10px;
+    /* font-size: 18px; */
+    font-weight: 600;
+    color: var(--text-bold);
+}
+
+.more {
+    width: 80px;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
 }
