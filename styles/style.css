@@ -45,7 +45,8 @@ body {
     align-items: center;
 }
 
-.navbar__title {
+.navbar__title,
+.section__title {
     color: var(--text-bold);
     font-weight: 700;
     font-size: 45px;
@@ -184,9 +185,6 @@ header {
 }
 
 .features__title {
-    font-weight: 700;
-    font-size: 45px;
-    color: var(--text-bold);
     padding-left: 20px;
     border-left: 5px solid var(--color-primary);
     margin-bottom: 25px;
@@ -239,4 +237,53 @@ header {
 .text__large {
     font-weight: 700;
     font-size: 65px;
+}
+
+
+/*-------------------------- 
+    Facts section styles
+--------------------------*/
+.facts {
+    margin-bottom: 180px;
+}
+
+.facts__description {
+    width: 540px;
+    margin-top: 24px;
+    margin-bottom: 100px;
+}
+
+.fact__container {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.fact {
+    width: 240px;
+    height: 240px;
+    border: 1px solid var(--color-primary);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.fact img {
+    height: 45px;
+    width: 45px;
+}
+
+.fact__counter {
+    font-weight: 600;
+    font-size: 45px;
+    color: var(--nav-link-color);
+}
+
+.fact__description {
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--text-light);
 }
